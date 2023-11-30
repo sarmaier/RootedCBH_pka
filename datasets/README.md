@@ -1,5 +1,3 @@
-NOTE: delta refers to the difference between the conjugate acid and conjugate base
-
 Column information
 - file (file index)
 - delta_band_gap (HOMO-LUMO)
