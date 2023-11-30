@@ -7,7 +7,6 @@ We developed a QM/ML framework with random forest to accurately predict the pKa 
 
 
 <img width="760" alt="image" src="https://github.com/sarmaier/RootedCBH_pka/assets/152440946/12b2d763-89f4-49a7-b009-7c56addb0697">
-
 Example of RootedCBH where nitrogen is the site of protonation. Fragments in gray are either not present in the molecule or do not correspond to the fragment with the minimum path length.
 
 
