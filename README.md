@@ -1,5 +1,6 @@
 <img width="476" alt="image" src="https://github.com/sarmaier/RootedCBH_pka/assets/152440946/8d220c14-f401-4e2b-a5c4-e2dc69d2e886">
 
+![cbh_w_background](https://github.com/sarmaier/RootedCBH_pka/assets/152440946/953c3225-14ee-470b-9167-ab14dd5213e7)
 
 
 
