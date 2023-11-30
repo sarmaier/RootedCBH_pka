@@ -1,4 +1,4 @@
-<img src="https://github.com/sarmaier/RootedCBH_pka/assets/152440946/93e400b9-bfc8-4050-acb7-d037b063459e" width="400" height="200"> 
+<img src="https://github.com/sarmaier/RootedCBH_pka/assets/152440946/93e400b9-bfc8-4050-acb7-d037b063459e" width="800" height="1200"> 
 
 
 # RootedCBH_pka
