@@ -1,3 +1,5 @@
+model.py random forest model which is used in the following paper:
+
 # Requirements
 
 * Python 3.6
