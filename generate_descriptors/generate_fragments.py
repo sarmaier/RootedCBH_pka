@@ -252,9 +252,6 @@ class CbhDescriptors:
         """
         cbh_frag_connectivity, cbh_frag_bond_order = {}, {}
         mol_xyz = {}
-        smi_f = open("log_cons_smiles.txt", "a")
-        smi_f.write(self.f_input + "\n")
-        smi_f.close()
         smile_dict = {}
         coord_dict = {}
         for i in cbh:
