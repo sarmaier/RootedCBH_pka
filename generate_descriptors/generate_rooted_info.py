@@ -100,7 +100,7 @@ def get_molecular_info(_id):
     acid_att = set_nodes(_acid_att, acid_edge, "bo")
     base_att = set_nodes(_base_att, base_edge, "bo")
 
-    acid_charge_file = open("id_" + mol_id + "_ca.charge", "r").read()
+    acid_charge_file = open("id_" + _id + "_ca.charge", "r").read()
     acid_charge = [x for x in acid_charge_file.split(" Charge =")[1].split(" ") if x]
 
     graph_mapping, acid_heavy, base_heavy = compare_graphs(acid_att, base_att)

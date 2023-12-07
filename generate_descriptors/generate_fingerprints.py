@@ -1,6 +1,7 @@
 import json_numpy
 import numpy as np
 import pandas as pd
+import subprocess
 
 
 # Function to save data to a JSON file
@@ -28,6 +29,8 @@ def get_unique_smiles(_smiles):
 
 
 if __name__ == "__main__":
+    cmd = ["python", "generate_rooted_info.py"]
+    subprocess.Popen(cmd).wait()
     # load fragment smiles and connectivity information
     try:
         smiles = load_json("fragment_smiles.json")
