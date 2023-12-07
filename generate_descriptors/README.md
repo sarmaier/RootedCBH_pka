@@ -7,8 +7,12 @@ python src/generate_fingerprints.py
 
 ## Requirements
 pandas~=1.0.1
+
 numpy~=1.18.1
+
 networkx~=2.5
+
 rdkit~=2020.03.3.0
+
 scipy~=1.5.4
 
