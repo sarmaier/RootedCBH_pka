@@ -205,7 +205,8 @@ class CbhError(Exception):
 
 class CbhDescriptors:
     """
-    generates CBH fragments
+    generates CBH framents. "steps" is rung of CBH. In this project, fragments are used for descriptors,
+    not QM calculations. For full CBH fragmentation code, see CBH repository under same owner.
     """
 
     def __init__(self, file_input, steps):
