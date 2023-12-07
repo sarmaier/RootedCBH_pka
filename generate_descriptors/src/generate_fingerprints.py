@@ -38,8 +38,7 @@ class GenInfoError(Exception):
 
 
 if __name__ == "__main__":
-    py_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-
+    py_dir = os.path.dirname(os.path.abspath(sys.argv[0])) # src/ directory
     try:
         cmd = ["python", py_dir + "/generate_rooted_info.py"]
         subprocess.Popen(cmd).wait()
