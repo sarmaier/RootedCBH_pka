@@ -1,3 +1,5 @@
+import os
+import sys
 import json_numpy
 import numpy as np
 import pandas as pd
@@ -36,8 +38,10 @@ class GenInfoError(Exception):
 
 
 if __name__ == "__main__":
+    py_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+
     try:
-        cmd = ["python", "generate_rooted_info.py"]
+        cmd = ["python", py_dir + "/generate_rooted_info.py"]
         subprocess.Popen(cmd).wait()
     except GenInfoError as e:
         print("Error caught with generate_rooted_info.py processing:", e.message)
