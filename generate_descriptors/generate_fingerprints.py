@@ -32,7 +32,7 @@ smiles = load_json("fragment_smiles.json")
 conn_dist = load_json("bond_lengths_away.json")
 
 # consider only those molecules in the train + val (not test) set
-train_index = list(pd.read_csv("train_val.csv")['file'])
+train_index = list(pd.read_csv("train_indices.csv")['file'])
 all_smiles = [list(smiles[x].values()) for x in smiles if int(x) in train_index]
 
 # get list of unique smiles from dataset considered
