@@ -6,8 +6,7 @@ Scripts to generate RootedCBH features. Assumes current directory contains all x
 python src/generate_fingerprints.py
 
 ## Requirements
-pandas~=1.0.1
-
+pandas~=1.0.1\n
 numpy~=1.18.1
 
 networkx~=2.5
