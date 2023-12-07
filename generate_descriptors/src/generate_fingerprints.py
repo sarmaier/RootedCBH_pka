@@ -39,6 +39,7 @@ class GenInfoError(Exception):
 
 if __name__ == "__main__":
     py_dir = os.path.dirname(os.path.abspath(sys.argv[0])) # src/ directory
+    my_dir = os.getcwd()
     try:
         cmd = ["python", py_dir + "/generate_rooted_info.py"]
         subprocess.Popen(cmd).wait()
@@ -54,7 +55,7 @@ if __name__ == "__main__":
         exit()
     # consider only those molecules in the train + val (not test) set
     try:
-        train_index = list(pd.read_csv("../train_indices.csv")['file'])
+        train_index = list(pd.read_csv(my_dir + "/train_indices.csv")['file'])
     except FileNotFoundError:
         print("Sorry, csv of train indices not found.")
         exit()

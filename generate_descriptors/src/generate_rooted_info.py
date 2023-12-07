@@ -123,7 +123,7 @@ if __name__ == "__main__":
     my_dir = os.getcwd() # current directory
     fragment_smiles = {}
     bond_lengths_away = {}
-    for filename in glob.glob(my_dir + "/id_*_ca.xyz"):
+    for filename in glob.glob(my_dir + "/id_220*_ca.xyz"):
         head, tail = os.path.split(filename)
         mol_id = tail.split("_")[1]
         print("Generating fragments for ID . . . " + mol_id)
