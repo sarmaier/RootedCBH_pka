@@ -61,7 +61,9 @@ def get_formal_charges(mol):
 
 
 def xyz_from_log(filename):
-    """get xyz coordinates from Gaussian log file"""
+    """get xyz coordinates from Gaussian log file. Returns byte output of obabel, dictionary of atom
+    labels and dictionary of atomic coordinates"""
+
     atomic_num = {'H': 1, 'B': 5, 'C': 6, 'N': 7, 'O': 8, 'F': 9, 'Si': 14, 'P': 15, 'S': 16, 'Cl': 17, 'Br': 35,
                   'I': 53}
     byte_output = subprocess.check_output('obabel ' + str(filename) + ' -oxyz', shell=True)
