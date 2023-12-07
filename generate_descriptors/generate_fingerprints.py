@@ -28,9 +28,20 @@ def get_unique_smiles(_smiles):
     return unique
 
 
+class GenInfoError(Exception):
+    """Custom exception for error handing generate_rooted_info.py"""
+    def __init__(self, message="generate_rooted_info.py could not proces input."):
+        self.message = message
+        super().__init__(self.message)
+
+
 if __name__ == "__main__":
-    cmd = ["python", "generate_rooted_info.py"]
-    subprocess.Popen(cmd).wait()
+    try:
+        cmd = ["python", "generate_rooted_info.py"]
+        subprocess.Popen(cmd).wait()
+    except GenInfoError as e:
+        print("Error caught with generate_rooted_info.py processing:", e.message)
+        exit()
     # load fragment smiles and connectivity information
     try:
         smiles = load_json("fragment_smiles.json")
@@ -48,6 +59,7 @@ if __name__ == "__main__":
 
     # get list of unique smiles from dataset considered
     unique_smiles = get_unique_smiles(all_smiles)
+    print("Getting unique fragments . . .")
     all_features = {}
     for value in smiles:
         count = {x: list(smiles[value].values()).count(x) for x in unique_smiles}
@@ -69,3 +81,5 @@ if __name__ == "__main__":
     # create csv of CBH features and feature identities (ordering will change)
     feature_value.to_csv("cbh_feature_identity.csv")
     df_features[:2389].to_csv("cbh_features_" + str(len(df_features)) + ".csv")
+    print("Done! CBH features found in cbh_features_" + str(len(df_features)) + ".csv")
+    print("CBH feature identity/indexing found in cbb_feature_identity")
