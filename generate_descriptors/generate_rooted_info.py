@@ -6,7 +6,7 @@ import numpy as np
 import copy
 import networkx as nx
 import networkx.algorithms.isomorphism as iso
-from generate_frags import CbhDescriptors
+from generate_fragments import CbhDescriptors
 
 
 def make_json(name, data):
