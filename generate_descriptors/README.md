@@ -1,1 +1,1 @@
-# Scripts to generate RootedCBH features. Assumes all xyz files for conjugate acid/congjugate base, along with charge files are present. To generate csv file of descriptors, along with descriptor labels/identities run "python generate_fingerprints.py". 
+Scripts to generate RootedCBH features. Assumes all xyz files for conjugate acid/congjugate base, along with charge files are present. To generate csv file of descriptors, along with descriptor labels/identities run "python generate_fingerprints.py". 
