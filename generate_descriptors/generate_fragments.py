@@ -197,8 +197,7 @@ def make_mol_block(formal_, labels, fragment, fragment_bo, center1=None, center2
 
 
 class CbhError(Exception):
-    """Custom exception for specific situations."""
-
+    """Custom exception for CBH error handling."""
     def __init__(self, message="CBH class could not proces input."):
         self.message = message
         super().__init__(self.message)
