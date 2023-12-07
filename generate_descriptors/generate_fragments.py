@@ -15,7 +15,8 @@ def point_from_string(string):
 
 
 def rotate_about_axis(theta, axis, vector):
-    """returns 1x3 numpy array representing vector rotated by theta"""
+    """For placement of added hydrogens after fragmenting. Returns 1x3 numpy array representing
+    vector rotated by theta"""
     # Convert the rotation angle from degrees to radians
     rotation_radians = np.radians(theta)
     # Calculate the rotation vector by multiplying the angle by the axis
