@@ -15,7 +15,7 @@ def byte_2_string(byte):
 
 
 def get_labels(string):
-    """get atom type as labelled in Gaussian log file. Returns dictionaries"""
+    """get atom type as labelled in Gaussian log file. Returns dictionaries of atom labels"""
     lst = list(filter(None, string.split(
         'Number     Number       Type             X           Y           Z\n '
         '---------------------------------------------------------------------\n      '
