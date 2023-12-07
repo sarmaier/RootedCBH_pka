@@ -2,7 +2,7 @@ import pandas as pd
 import sklearn
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score, make_scorer, mean_absolute_error
-#sarah
+
 
 
 def load_datasets(train_path, test_path, sampl6_path, novartis_path):
