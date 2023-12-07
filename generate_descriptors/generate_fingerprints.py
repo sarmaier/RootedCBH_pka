@@ -36,7 +36,11 @@ if __name__ == "__main__":
         print("Sorry, fragment or bond info missing. Failed to generate fingerprints.")
         exit()
     # consider only those molecules in the train + val (not test) set
-    train_index = list(pd.read_csv("train_indices.csv")['file'])
+    try:
+        train_index = list(pd.read_csv("train_indices.csv")['file'])
+    except FileNotFoundError:
+        print("Sorry, csv of train indices not found.")
+        exit()
     all_smiles = [list(smiles[x].values()) for x in smiles if int(x) in train_index]
 
     # get list of unique smiles from dataset considered
