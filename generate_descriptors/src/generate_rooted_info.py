@@ -1,3 +1,4 @@
+import os
 import re
 import glob
 import subprocess
@@ -81,9 +82,10 @@ def get_string(filename_):
     return string
 
 
-def get_molecular_info(_id):
-    acid_sdf = get_sdf("id_" + _id + "_ca.xyz")
-    base_sdf = get_sdf("id_" + _id + "_cb.xyz")
+def get_molecular_info(_dir, _id):
+    print(_dir, _id)
+    acid_sdf = get_sdf(_dir + "/id_" + _id + "_ca.xyz")
+    base_sdf = get_sdf(_dir + "/id_" + _id + "_cb.xyz")
 
     acid_cycle, acid_edge = sdf_2_graph(acid_sdf)
     base_cycle, base_edge = sdf_2_graph(base_sdf)
@@ -100,7 +102,7 @@ def get_molecular_info(_id):
     acid_att = set_nodes(_acid_att, acid_edge, "bo")
     base_att = set_nodes(_base_att, base_edge, "bo")
 
-    acid_charge_file = open("id_" + _id + "_ca.charge", "r").read()
+    acid_charge_file = open(_dir + "/id_" + _id + "_ca.charge", "r").read()
     acid_charge = [x for x in acid_charge_file.split(" Charge =")[1].split(" ") if x]
 
     graph_mapping, acid_heavy, base_heavy = compare_graphs(acid_att, base_att)
@@ -118,13 +120,15 @@ def distance_function(x):
 
 
 if __name__ == "__main__":
+    my_dir = os.getcwd() # current directory
     fragment_smiles = {}
     bond_lengths_away = {}
-    for filename in glob.glob("*_ca.xyz"):
-        mol_id = filename.split("_")[1]
+    for filename in glob.glob(my_dir + "/id_30*_ca.xyz"):
+        head, tail = os.path.split(filename)
+        mol_id = tail.split("_")[1]
         print("Generating fragments for ID . . . " + mol_id)
 
-        graph_map, heavy_index, acid_or_base, b_heavy_index = get_molecular_info(mol_id)
+        graph_map, heavy_index, acid_or_base, b_heavy_index = get_molecular_info(my_dir, mol_id)
 
         cbh_input_file = "id_" + str(mol_id) + "_" + acid_or_base + ".xyz"
         fragments = CbhDescriptors(cbh_input_file, "1")
