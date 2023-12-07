@@ -48,7 +48,7 @@ def orthogonal_v(vector):
 
 
 def unit_vector(p_0, p_1):
-    """returns 1x3 numpy array representing unit vector from p_0 to p_1"""
+    """returns 1x3 numpy array representing unit vector from two points in 3d space, p_0 to p_1"""
     # Calculate the vector from p_0 to p_1
     vector = (p_1 - p_0)
     vector = (vector / LA.norm(vector))
