@@ -6,7 +6,7 @@ import numpy as np
 import copy
 import networkx as nx
 import networkx.algorithms.isomorphism as iso
-from generate_fragments import CbhDescriptors
+from generate_descriptors.src.generate_fragments import CbhDescriptors
 
 
 def make_json(name, data):
@@ -40,7 +40,7 @@ def net_graph(l_graph: list):
 
 
 def get_labels(string_):
-    labels = [[x for x in y.split(" ") if x][3] for y in string_.split("\n")[3:] if len(re.findall("\.", y)) == 3]
+    labels = [[x for x in y.split(" ") if x][3] for y in string_.split("\n")[3:] if len(re.findall("..", y)) == 3]
     labels = {i: labels[i].lower() for i in range(len(labels))}
     return labels
 
