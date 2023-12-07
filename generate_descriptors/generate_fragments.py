@@ -223,7 +223,7 @@ class CbhDescriptors:
         formal_charges = mol_graph.formal_charges
         heavy_neighbors = {atom.GetIdx(): len(atom.GetBonds()) - int(atom.GetTotalNumHs(includeNeighbors=True))
                            for atom in mol_graph.mol.GetAtoms()}
-
+        # for descriptors, not considering terminal atom-centered fragments.
         non_terminal = {x: labels[x] for x in heavy_neighbors if heavy_neighbors[x] > 1}
         cbh_w_index = cbh_atom(labels, adj, bond_order, self.coordinates, steps)
 
