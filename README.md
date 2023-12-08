@@ -20,7 +20,7 @@ RootedCBH_pka repository contains tools to run QM/ML (random forest) framework f
 
 * pandas~=1.0.1
 
-* numpy~=1.18.1
+* numpy~=1.19.5
 
 * networkx~=2.5
 
