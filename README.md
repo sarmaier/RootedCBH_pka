@@ -26,7 +26,7 @@ RootedCBH_pka repository contains tools to run QM/ML (random forest) framework f
 
 * rdkit~=2020.03.3.0
 
-* scipy~=1.5.4
+* scipy~=1.5.3
 
 * json-numpy-1.0.1
 
