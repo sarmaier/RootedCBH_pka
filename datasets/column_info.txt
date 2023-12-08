@@ -1,6 +1,3 @@
-Note: delta refers to the difference between the conjugate acid and conjugate base
-
-Further information can be found in the publication: 
 
 Column Information
 
@@ -32,3 +29,7 @@ Column Information
 - conjugate_base (SMILES)
 - predicted_rf (pKa predicted from random forest, pKa)
 - exp_pka (experimental pKa, pKa)
+
+Note: delta refers to the difference between the conjugate acid and conjugate base
+
+Further information can be found in the publication: 
