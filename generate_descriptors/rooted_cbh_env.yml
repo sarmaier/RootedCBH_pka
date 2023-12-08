@@ -1,4 +1,4 @@
-name: my-rdkit-env
+name: rooted-cbh-env
 channels:
   - rdkit
   - chen
