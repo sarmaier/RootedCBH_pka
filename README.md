@@ -16,7 +16,7 @@ RootedCBH_pka repository contains tools to run QM/ML (random forest) framework f
 
 * pandas 1.5.2
 
-## RootedCBH generator Requirements
+## RootedCBH Generator Requirements
 
 * pandas~=1.0.1
 
