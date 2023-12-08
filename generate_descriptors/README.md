@@ -18,7 +18,7 @@ git clone git@github.com:sarmaier/RootedCBH_pka.git
 
 cd RootedCBH_pka/datasets/xyz_files
 
-cp ../../generate_descriptors/train_indices.csv 
+cp ../../generate_descriptors/train_indices.csv .
 
 unzip dataset_2386_xyz_charge_ca.zip
 
