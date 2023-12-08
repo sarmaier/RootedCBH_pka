@@ -2,7 +2,8 @@ Note: delta refers to the difference between the conjugate acid and conjugate ba
 
 Further information can be found in the publication: 
 
-Column information
+Column Information
+
 - file (file index)
 - delta_band_gap (HOMO-LUMO gap, eV)
 - delta_h_corr (enthalpy correction from DFT, Hartree)
