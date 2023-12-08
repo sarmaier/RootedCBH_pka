@@ -7,6 +7,10 @@ Scripts to generate RootedCBH features. Generates two csv files . . . 1) descrip
 
 Example of RootedCBH fingerprint, where nitrogen is the site of protonation. Fragments in gray are either not present in the molecule or do not correspond to the fragment with the minimum path length.
 
+## Usage
+
+python src/generate_descriptors.py
+
 ## Deployment
 
 git clone git@github.com:sarmaier/RootedCBH_pka.git
