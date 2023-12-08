@@ -6,27 +6,19 @@
 RootedCBH_pka repository contains tools to run QM/ML (random forest) framework for the accurate prediction of pKas of complex organic molecules using physics-based features from DFT and structural features from our CBH fragmentation protocol. Our model corrects the functional group specific deficiencies associated with DFT and achieves impressive accuracy on two extenrnal benchmark test sets, the SAMPL6 and Novartis datasets.
 
 
-## Model Requirements
-
-* Python 3.6
-
-* Rdkit (http://www.rdkit.org/docs/Install.html)
-
-* sklearn 1.2.0
-
-* pandas 1.5.2
-
-## RootedCBH Generator Requirements
+## Requirements
 
 * pandas~=1.0.1
 
 * numpy~=1.19.5
 
-* networkx~=2.5
+* networkx~=2.5.1
 
 * rdkit~=2020.03.3.0
 
 * scipy~=1.5.3
+
+* scikit-learn~=0.24.2
 
 * json-numpy-1.0.1
 
