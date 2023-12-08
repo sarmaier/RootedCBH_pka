@@ -26,7 +26,7 @@ Column Information
 - hybridization (hybridization of heteroatom being deprotonated)
 - CBH_1:CBH_81 (index of CBH fragment)
 - bond_length (bond length of heteroatom being deprotonated/protonated)
-- delta_e_extent (total electronic extent, au)
+- delta_e_extent (total electronic extent)
 - delta_tpsa (topological polar surface area)
 - conjugate_acid (SMILES)
 - conjugate_base (SMILES)
