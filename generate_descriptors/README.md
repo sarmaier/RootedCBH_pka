@@ -13,7 +13,7 @@ python src/generate_descriptors.py
 ```
 
 ## Deployment
-
+```
 git clone git@github.com:sarmaier/RootedCBH_pka.git
 
 cd RootedCBH_pka/datasets/xyz_files
@@ -25,7 +25,7 @@ unzip dataset_2386_xyz_charge_ca.zip
 unzip dataset_2386_xyz_charge_cb.zip
 
 python ../../generate_descriptors/src/generate_fingerprints.py
-
+```
 ## Requirements
 * pandas~=1.0.1
 
