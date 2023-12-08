@@ -27,14 +27,14 @@ unzip dataset_2386_xyz_charge_cb.zip
 python ../../generate_descriptors/src/generate_fingerprints.py
 
 ## Requirements
-pandas~=1.0.1
+* pandas~=1.0.1
 
-numpy~=1.18.1
+* numpy~=1.18.1
 
-networkx~=2.5
+* networkx~=2.5
 
-rdkit~=2020.03.3.0
+* rdkit~=2020.03.3.0
 
-scipy~=1.5.4
+* scipy~=1.5.4
 
 
