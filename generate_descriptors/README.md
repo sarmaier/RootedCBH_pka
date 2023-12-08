@@ -16,6 +16,8 @@ python src/generate_descriptors.py
 ```
 git clone git@github.com:sarmaier/RootedCBH_pka.git
 
+conda env create -f RootedCBH/generate_descriptors/rooted_cbh_env.yml
+
 cd RootedCBH_pka/datasets/xyz_files
 
 cp ../../generate_descriptors/train_indices.csv .
