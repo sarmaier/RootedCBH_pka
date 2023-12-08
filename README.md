@@ -11,9 +11,9 @@ RootedCBH_pka repository contains tools to run QM/ML (random forest) framework f
 * Python 3.6
 * 
 * Rdkit (http://www.rdkit.org/docs/Install.html)
-* 
+
 * sklearn 1.2.0
-* 
+
 * pandas 1.5.2
 
 ## RootedCBH generator Requirements
