@@ -22,4 +22,3 @@ RootedCBH_pka repository contains tools to run QM/ML (random forest) framework f
 
 * json-numpy-1.0.1
 
-hola
